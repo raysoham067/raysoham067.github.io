@@ -15,5 +15,5 @@ Designed with a clean UI, smooth animations, mobile-first responsiveness, and an
 ✨ Cross-browser compatibility  
 ✨ Lightweight & fast performance  
 
-Live Link :- https://raysoham067.vercel.app
+Live Link :- https://raysoham067.github.io
 # raysoham067.github.io
