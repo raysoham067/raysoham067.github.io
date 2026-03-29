@@ -1,339 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soham Ray | Full-Stack & AI/ML Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soham Ray — Full-Stack & AI/ML Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <!-- Cursor -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-follower" id="cursorFollower"></div>
+  <!-- ── NAVBAR ── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">SR<span class="logo-dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home"     class="nl">Home</a>
+        <a href="#about"    class="nl">About</a>
+        <a href="#skills"   class="nl">Skills</a>
+        <a href="#projects" class="nl">Projects</a>
+        <a href="#contact"  class="nl">Contact</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <!-- Noise overlay -->
-    <div class="noise"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#">SR<span class="dot">.</span></a>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span><span></span>
-            </div>
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <div class="hero-bg-blobs" aria-hidden="true">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow"><span class="dot-live"></span> Open to opportunities</p>
+        <h1 class="hero-h1">Hi, I'm<br /><em>Soham Ray</em></h1>
+        <p class="hero-role">Full-Stack Developer &amp; AI/ML Enthusiast</p>
+        <p class="hero-desc">I craft scalable web apps and intelligent AI-powered solutions — passionate about clean code, modern tech, and products that make a difference.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-solid">View My Work <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact"  class="btn btn-outline">Get In Touch</a>
+          <a href="Off Campus.pdf" class="btn btn-ghost" download><i class="fas fa-download"></i> Resume</a>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="hero-orb orb-1"></div>
-            <div class="hero-orb orb-2"></div>
-            <div class="hero-orb orb-3"></div>
-            <div class="grid-lines"></div>
+        <div class="hero-stats">
+          <div class="hs"><strong>3+</strong><span>Projects</span></div>
+          <div class="hs-div"></div>
+          <div class="hs"><strong>5+</strong><span>Technologies</span></div>
+          <div class="hs-div"></div>
+          <div class="hs"><strong>∞</strong><span>Curiosity</span></div>
         </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge reveal">
-                    <span class="badge-dot"></span> Available for Opportunities
-                </div>
-                <h1 class="hero-title reveal">
-                    <span class="line">Hi, I'm</span>
-                    <span class="line name-line">Soham<span class="accent">.</span></span>
-                </h1>
-                <h2 class="hero-subtitle reveal">Full-Stack Developer <span class="amp">&amp;</span> AI/ML Enthusiast</h2>
-                <p class="hero-description reveal">
-                    I craft scalable web applications and intelligent AI-powered solutions.
-                    Passionate about clean code, modern technologies, and building products that make a difference.
-                </p>
-                <div class="hero-buttons reveal">
-                    <a href="#projects" class="btn btn-primary">
-                        <span>View My Work</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-ghost">Get In Touch</a>
-                    <a href="Off Campus.pdf" class="btn btn-outline" download>
-                        <i class="fas fa-download"></i> Resume
-                    </a>
-                </div>
-                <div class="hero-stats reveal">
-                    <div class="stat-item">
-                        <span class="stat-num">3+</span>
-                        <span class="stat-label">Projects Built</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-num">5+</span>
-                        <span class="stat-label">Technologies</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-num">∞</span>
-                        <span class="stat-label">Curiosity</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image reveal">
-                <div class="profile-ring">
-                    <div class="profile-picture">
-                        <img src="Soham.jpg" alt="Soham Ray" class="profile-img">
-                    </div>
-                    <div class="ring ring-1"></div>
-                    <div class="ring ring-2"></div>
-                    <div class="floating-badge badge-react">
-                        <i class="fab fa-react"></i> React
-                    </div>
-                    <div class="floating-badge badge-python">
-                        <i class="fab fa-python"></i> Python
-                    </div>
-                    <div class="floating-badge badge-node">
-                        <i class="fab fa-node-js"></i> Node
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="Soham.jpg" alt="Soham Ray" width="340" height="340" loading="eager" />
         </div>
-        <a href="#about" class="scroll-hint">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
-        </a>
-    </section>
+        <div class="chip chip-react"><i class="fab fa-react"></i> React</div>
+        <div class="chip chip-python"><i class="fab fa-python"></i> Python</div>
+        <div class="chip chip-node"><i class="fab fa-node-js"></i> Node.js</div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">01 — About</span>
-                <h2 class="section-title">The Person<br>Behind the Code</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-image-col">
-                    <div class="about-img-wrap">
-                        <img src="Soham1.jpg" alt="Soham Ray" class="about-img">
-                        <div class="img-backdrop"></div>
-                        <div class="img-tag">
-                            <i class="fas fa-map-marker-alt"></i> Kolkata, India
-                        </div>
-                    </div>
-                </div>
-                <div class="about-text-col">
-                    <p class="about-lead">
-                        I'm a passionate <strong>Full-Stack Developer</strong> and <strong>AI/ML student</strong> with a solid foundation in web technologies and a keen interest in building intelligent, data-driven applications.
-                    </p>
-                    <p>
-                        I specialize in developing end-to-end solutions using modern frameworks and enjoy integrating AI/ML capabilities to create smarter user experiences. Beyond coding, I actively explore emerging technologies and contribute to open-source projects.
-                    </p>
-                    <div class="about-cta">
-                        <a href="https://github.com/raysoham067" target="_blank" class="social-pill">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://www.linkedin.com/in/soham-ray-7a220a29b" target="_blank" class="social-pill">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                    </div>
-                </div>
-            </div>
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="sec-tag">01 — About</div>
+      <h2 class="sec-title">The person<br />behind the code.</h2>
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <img src="Soham1.jpg" alt="Soham Ray" class="about-img" width="380" height="460" loading="lazy" />
+          <div class="about-img-badge"><i class="fas fa-map-marker-alt"></i> Kolkata, India</div>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">02 — Skills</span>
-                <h2 class="section-title">Tools &amp; Technologies<br>I Work With</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-card-header">
-                        <div class="skill-icon-wrap"><i class="fas fa-terminal"></i></div>
-                        <h3>Programming &amp; DSA</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li><i class="fab fa-python"></i> Python</li>
-                        <li><i class="fas fa-code"></i> Data Structures &amp; Algorithms</li>
-                        <li><i class="fas fa-laptop-code"></i> C Programming</li>
-                        <li><i class="fas fa-database"></i> DBMS</li>
-                    </ul>
-                </div>
-                <div class="skill-card skill-card--accent">
-                    <div class="skill-card-header">
-                        <div class="skill-icon-wrap"><i class="fas fa-globe"></i></div>
-                        <h3>Web Development</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li><i class="fab fa-react"></i> React.js</li>
-                        <li><i class="fab fa-node-js"></i> Node.js</li>
-                        <li><i class="fas fa-server"></i> Express.js</li>
-                        <li><i class="fas fa-database"></i> SQLite / MongoDB</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-card-header">
-                        <div class="skill-icon-wrap"><i class="fas fa-brain"></i></div>
-                        <h3>AI/ML &amp; Soft Skills</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li><i class="fas fa-brain"></i> Machine Learning</li>
-                        <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
-                        <li><i class="fas fa-hourglass-half"></i> Time Management</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="about-body">
+          <p class="about-lead">I'm a passionate <strong>Full-Stack Developer</strong> and <strong>AI/ML student</strong> with a solid foundation in web technologies and a keen interest in building intelligent, data-driven applications.</p>
+          <p>I specialise in developing end-to-end solutions using modern frameworks and enjoy integrating AI/ML capabilities to create smarter user experiences. Beyond coding, I actively explore emerging technologies and contribute to open-source projects.</p>
+          <div class="about-socials">
+            <a href="https://github.com/raysoham067" target="_blank" rel="noopener" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/soham-ray-7a220a29b" target="_blank" rel="noopener" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">03 — Projects</span>
-                <h2 class="section-title">Things I've<br>Built</h2>
-            </div>
-            <div class="projects-grid">
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="sec-tag">02 — Skills</div>
+      <h2 class="sec-title">Tools &amp; technologies<br />I work with.</h2>
+      <div class="skills-grid">
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
-                        <div class="project-links-top">
-                            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/raysoham067/E-Commerce.git" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>E-Commerce Platform</h3>
-                    <p>Full-stack e-commerce solution with React frontend, Node.js backend, robust API, and payment gateway integration for seamless shopping experience.</p>
-                    <div class="project-tech">
-                        <span>React</span><span>Node.js</span><span>MongoDB</span>
-                    </div>
-                </div>
-
-                <div class="project-card project-card--featured">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-mobile-alt"></i></div>
-                        <div class="project-links-top">
-                            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/raysoham067/food-delivery-app.git" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Food Delivery App</h3>
-                    <p>Responsive food ordering platform with real-time tracking, allowing users to browse restaurants and place orders efficiently.</p>
-                    <div class="project-tech">
-                        <span>React.js</span><span>Node.js</span><span>Express.js</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
-                        <div class="project-links-top">
-                            <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/raysoham067/Fitness-tracker.git" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Fitness Tracker</h3>
-                    <p>Interactive dashboard for tracking fitness data, visualizing progress, and managing goals with real-time updates.</p>
-                    <div class="project-tech">
-                        <span>React.js</span><span>CSS</span><span>MongoDB</span>
-                    </div>
-                </div>
-
-            </div>
+        <div class="skill-card" data-delay="0">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+            <h3>Programming &amp; DSA</h3>
+          </div>
+          <ul class="skill-items">
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-code"></i> Data Structures &amp; Algorithms</li>
+            <li><i class="fas fa-laptop-code"></i> C Programming</li>
+            <li><i class="fas fa-database"></i> DBMS</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">04 — Contact</span>
-                <h2 class="section-title">Let's Build<br>Something Together</h2>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p class="contact-lead">I'm always open to new opportunities, exciting projects, and collaborations in Full-Stack Development and AI/ML.</p>
-                    <div class="contact-links">
-                        <a href="https://wa.me/916294526261" target="_blank" class="contact-link">
-                            <div class="contact-link-icon whatsapp"><i class="fab fa-whatsapp"></i></div>
-                            <div>
-                                <span class="contact-link-label">WhatsApp</span>
-                                <span class="contact-link-val">Chat with me</span>
-                            </div>
-                            <i class="fas fa-arrow-right contact-arrow"></i>
-                        </a>
-                        <a href="mailto:raysoham067@gmail.com" class="contact-link">
-                            <div class="contact-link-icon gmail"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <span class="contact-link-label">Email</span>
-                                <span class="contact-link-val">raysoham067@gmail.com</span>
-                            </div>
-                            <i class="fas fa-arrow-right contact-arrow"></i>
-                        </a>
-                        <a href="tel:+916294526261" class="contact-link">
-                            <div class="contact-link-icon phone"><i class="fas fa-phone-alt"></i></div>
-                            <div>
-                                <span class="contact-link-label">Phone</span>
-                                <span class="contact-link-val">+91 62945 26261</span>
-                            </div>
-                            <i class="fas fa-arrow-right contact-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <form class="contact-form" id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">
-                        <span>Send Message</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
+        <div class="skill-card skill-card--hi" data-delay="100">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fas fa-globe"></i></div>
+            <h3>Web Development</h3>
+          </div>
+          <ul class="skill-items">
+            <li><i class="fab fa-react"></i> React.js</li>
+            <li><i class="fab fa-node-js"></i> Node.js</li>
+            <li><i class="fas fa-server"></i> Express.js</li>
+            <li><i class="fas fa-database"></i> SQLite / MongoDB</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">SR<span class="dot">.</span></div>
-                <p>&copy; 2026 Soham Ray. Crafted with passion.</p>
-                <div class="footer-links">
-                    <a href="https://github.com/raysoham067" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/soham-ray-7a220a29b" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
+        <div class="skill-card" data-delay="200">
+          <div class="skill-card-top">
+            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+            <h3>AI/ML &amp; Soft Skills</h3>
+          </div>
+          <ul class="skill-items">
+            <li><i class="fas fa-brain"></i> Machine Learning</li>
+            <li><i class="fas fa-lightbulb"></i> Problem Solving</li>
+            <li><i class="fas fa-hourglass-half"></i> Time Management</li>
+          </ul>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="sec-tag">03 — Projects</div>
+      <h2 class="sec-title">Things I've<br />built.</h2>
+      <div class="projects-grid">
+
+        <article class="proj-card" data-delay="0">
+          <div class="proj-top">
+            <div class="proj-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="proj-ext-links">
+              <a href="#" target="_blank" rel="noopener" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/raysoham067/E-Commerce.git" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>E-Commerce Platform</h3>
+          <p>Full-stack e-commerce solution with React frontend, Node.js backend, robust REST API, and payment gateway integration.</p>
+          <div class="proj-tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+        </article>
+
+        <article class="proj-card proj-card--featured" data-delay="120">
+          <div class="proj-top">
+            <div class="proj-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="proj-ext-links">
+              <a href="#" target="_blank" rel="noopener" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/raysoham067/food-delivery-app.git" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Food Delivery App</h3>
+          <p>Responsive food ordering platform with real-time tracking — browse restaurants and place orders with ease.</p>
+          <div class="proj-tags">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span>
+          </div>
+        </article>
+
+        <article class="proj-card" data-delay="240">
+          <div class="proj-top">
+            <div class="proj-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="proj-ext-links">
+              <a href="#" target="_blank" rel="noopener" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/raysoham067/Fitness-tracker.git" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Fitness Tracker</h3>
+          <p>Interactive dashboard for tracking fitness data, visualising progress, and managing goals with real-time updates.</p>
+          <div class="proj-tags">
+            <span>React.js</span><span>CSS</span><span>MongoDB</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="sec-tag">04 — Contact</div>
+      <h2 class="sec-title">Let's build<br />something together.</h2>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <p class="contact-intro">I'm always open to new opportunities, exciting projects, and collaborations in Full-Stack Development and AI/ML.</p>
+          <div class="contact-cards">
+            <a href="https://wa.me/916294526261" target="_blank" rel="noopener" class="cc">
+              <div class="cc-icon cc-wa"><i class="fab fa-whatsapp"></i></div>
+              <div class="cc-body">
+                <span class="cc-label">WhatsApp</span>
+                <span class="cc-value">Chat with me</span>
+              </div>
+              <i class="fas fa-arrow-right cc-arrow"></i>
+            </a>
+            <a href="mailto:raysoham067@gmail.com" class="cc">
+              <div class="cc-icon cc-gm"><i class="fas fa-envelope"></i></div>
+              <div class="cc-body">
+                <span class="cc-label">Email</span>
+                <span class="cc-value">raysoham067@gmail.com</span>
+              </div>
+              <i class="fas fa-arrow-right cc-arrow"></i>
+            </a>
+            <a href="tel:+916294526261" class="cc">
+              <div class="cc-icon cc-ph"><i class="fas fa-phone-alt"></i></div>
+              <div class="cc-body">
+                <span class="cc-label">Phone</span>
+                <span class="cc-value">+91 62945 26261</span>
+              </div>
+              <i class="fas fa-arrow-right cc-arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="fg">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="fg">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required />
+            </div>
+          </div>
+          <div class="fg">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="fg">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-solid btn-full">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo">SR<span class="logo-dot">.</span></span>
+      <p>&copy; 2026 Soham Ray. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/raysoham067" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/soham-ray-7a220a29b" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
